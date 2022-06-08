@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Product App</title>
-    <!-- Bootswatch Cosmo Theme -->
+    <title>VentasApp</title>
+    <!-- Bootswatch Theme -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css"
+      href="https://bootswatch.com/5/cyborg/bootstrap.min.css"
     />
 
     <!-- Custom CSS -->
@@ -17,8 +17,25 @@
 
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Products App</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">VentasApp</a>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/barrosjss/ventasapp-javascript-poo">GitHub</a>
+            </li>
+          </ul>
+      </div>
     </nav>
 
     <div class="container">
@@ -28,7 +45,7 @@
         <div class="col-md-4">
           <div class="card">
             <div class="card-header">
-              <h4>Add Add A Product</h4>
+              <h4>Add Product</h4>
             </div>
             <form id="product-form" class="card-body">
               <div class="form-group">
@@ -39,6 +56,7 @@
                   class="form-control"
                 />
               </div>
+              <br>
               <div class="form-group">
                 <input
                   type="number"
@@ -48,6 +66,7 @@
                   class="form-control"
                 />
               </div>
+              <br>
               <div class="form-group">
                 <input
                   type="number"
@@ -59,10 +78,11 @@
                   class="form-control"
                 />
               </div>
+              <br>
               <input
                 type="submit"
-                value="Save"
-                class="btn btn-primary btn-block"
+                value="Vender"
+                class="btn btn-warning"
               />
             </form>
           </div>
