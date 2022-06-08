@@ -1,1 +1,1 @@
-# ventasapp-javascript-poo
+# Javascript OOP VentasApp
