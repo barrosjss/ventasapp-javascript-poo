@@ -1,15 +1,12 @@
-// Clase Principal
-class UnidadCentral {
-  constructor(name) {
-    this.name = name;
-  }
-}
-
 // Componentes (varios elementos perifericos)
 
 // Clase Padre
 class Componentes {
-  constructor(name) {
-    this.name = name;
+  constructor(tipo, modelo, precio, anoFabrica) {
+    this.tipo = tipo;
+    this.modelo = modelo;
+    this.precio = precio;
+    this.nomFabricante = nomFabricante;
+    this.anoFabrica = anoFabrica;
   }
 }
