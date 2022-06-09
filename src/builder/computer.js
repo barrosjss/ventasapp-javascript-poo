@@ -15,6 +15,14 @@ class Compu {
     this.altavoces = altavoces;
     return this;
   }
+  setTabletaGrafica(tabletaGrafica) {
+    this.tabletaGrafica = tabletaGrafica;
+    return this;
+  }
+  setImpresora(impresora) {
+    this.impresora = impresora;
+    return this;
+  }
   bake(){
     console.log(this);
   }
