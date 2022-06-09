@@ -15,14 +15,18 @@ class Componentes {
 
 // Clases Hijo
 class CompSalida {
-  constructor(tipoConector, puertosValidos) {
+  constructor(ID, nombre,tipoConector, puertosValidos) {
+    this.ID = ID;
+    this.nombre = nombre; 
     this.tipoConector = tipoConector; // sera un STRING
     this.puertosValidos = puertosValidos; // varios valores de tipo entero
   }
 }
 
 class CompEntrada {
-  constructor(puertosValidos) {
+  constructor(ID, nombre,puertosValidos) {
+    this.ID = ID;
+    this.nombre = nombre;
     this.puertosValidos = puertosValidos; // varios valores de tipo entero
   }
 }
