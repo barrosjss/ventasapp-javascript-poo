@@ -1,31 +1,43 @@
-class Compu {
-  setPantalla(pantalla) {
-    this.pantalla = pantalla;
+// Assemble computer (una unidad central)
+class Computer {
+  // Componentes (varios elementos perifericos)
+  setUnidadCentral(unidadCentral) {
+    this.unidadCentral = unidadCentral;
     return this;
   }
-  setMouse(mouse) {
-    this.mouse = mouse;
-    return this;
-  }
+
+  // Dispositivo de entrada
   setTeclado(teclado) {
     this.teclado = teclado;
     return this;
   }
-  setAltavoces(altavoces) {
-    this.altavoces = altavoces;
+
+  setRaton(raton) {
+    this.raton = raton;
     return this;
   }
+
   setTabletaGrafica(tabletaGrafica) {
     this.tabletaGrafica = tabletaGrafica;
     return this;
   }
-  setImpresora(impresora) {
-    this.impresora = impresora;
+
+  // Dispositivo de salida
+  setpantallas(pantallas) {
+    this.pantallas = pantallas;
     return this;
   }
-  bake(){
-    console.log(this);
+
+  setImpresoras(impresoras) {
+    this.impresoras = impresoras;
+    return this;
+  }
+
+  // Dispositivo especial
+  setPantallaTactil(pantallaTactil) {
+    this.pantallaTactil = pantallaTactil;
+    return this;
   }
 }
 
-module.exports = Compu;
+module.exports = Computer;

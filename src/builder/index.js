@@ -1,10 +1,6 @@
-const Compu = require("./builder"); 
-const gamer = new Compu();
+const Computer = require("./computer"); 
+const vender = new Computer();
 
 
-gamer
+vender
     .setPantalla("Pantalla Oled")
-    .setMouse("mouse RGB")
-    .setTeclado("teclado RGB")
-    .setAltavoces("altavoces Sony")
-    .bake();
