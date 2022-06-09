@@ -1,1 +1,1 @@
-# Javascript OOP VentasApp
+# Javascript POO VentasApp
