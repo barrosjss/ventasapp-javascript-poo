@@ -29,24 +29,26 @@ document
         `20${Math.floor(Math.random() * 21)}`,
         Math.floor(Math.random() * 999 + 1),
         name,
-        typeConnect || '',
+        typeConnect,
         Math.floor(Math.random() * 10)
       );
     }
 
-    component = new CompEntrada(
-      Math.floor(Math.random() * 9999),
-      typeArticle,
-      "Mauricio",
-      typeComponent,
-      Math.floor(Math.random() * 9999),
-      Math.floor(Math.random() * 9999),
-      `20${Math.floor(Math.random() * 21)}`,
-      Math.floor(Math.random() * 999 + 1),
-      name,
-      typeConnect || '',
-      Math.floor(Math.random() * 10)
-    );
+    if(typeComponent == "Input"){
+      component = new CompEntrada(
+        Math.floor(Math.random() * 9999),
+        typeArticle,
+        "Mauricio",
+        typeComponent,
+        Math.floor(Math.random() * 9999),
+        Math.floor(Math.random() * 9999),
+        `20${Math.floor(Math.random() * 21)}`,
+        Math.floor(Math.random() * 999 + 1),
+        name,
+        typeConnect,
+        Math.floor(Math.random() * 10)
+      );
+    }
 
     // Create a new Oject Product
     
