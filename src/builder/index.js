@@ -3,4 +3,5 @@ const vender = new Computer();
 
 
 vender
-    .setPantalla("Pantalla Oled")
+    .setpantallas("Pantalla Oled")
+    .bake()

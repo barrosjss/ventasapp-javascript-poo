@@ -57,27 +57,30 @@
                 />
               </div>
               <br>
-              <div class="form-group">
-                <input
-                  type="number"
-                  id="price"
-                  step="0.01"
-                  placeholder="Product Price"
-                  class="form-control"
-                />
-              </div>
+              <select id="type-article" class="form-select" aria-label="Default select example">
+                <option selected>Select type article</option>
+                <option value="Unidad Central">Unidad Central</option>
+                <option value="Teclado">Teclado</option>
+                <option value="Raton">Raton</option> 
+                <option value="Tableta Grafica">Tableta Grafica</option>
+                <option value="Pantalla">Pantalla</option> 
+                <option value="Impresora">Impresora</option> 
+                <option value="Pantalla Tactil">Pantalla Tactil</option>
+              </select>
               <br>
-              <div class="form-group">
-                <input
-                  type="number"
-                  id="year"
-                  min="1900"
-                  max="2099"
-                  step="1"
-                  value="2018"
-                  class="form-control"
-                />
-              </div>
+              <select id="type-connect" class="form-select" aria-label="Default select example">
+                <option selected>Select type connect</option>
+                <option value="USB">USB</option>
+                <option value="Type C">Type C</option>
+                <option value="Lightning">Lightning</option> 
+              </select>
+              <br>
+              <br>
+              <select id="type-component" class="form-select" aria-label="Default select example">
+                <option selected>Select type component</option>
+                <option value="Output">Output</option>
+                <option value="Input">Input</option>
+              </select>
               <br>
               <input
                 type="submit"

@@ -3,20 +3,27 @@
  */
 export class UI {
   /**
-   * Add a New Product 
-   * @param {Object} product A new product Object
+   * Add a New Component
    */
-  addProduct(product) {
+  addComponent(component) {
     const productList = document.getElementById("product-list");
     const element = document.createElement("div");
     element.innerHTML = `
             <div class="card text-center mb-4">
                 <div class="card-body">
-                    <strong>Product</strong>: ${product.name} -
-                    <strong>Price</strong>: ${product.price} - 
-                    <strong>Year</strong>: ${product.year}
-                    <a href="#" class="btn btn-danger" name="delete">Delete</a>
+                    <strong>ID</strong>: ${component.id} -
+                    <strong>Type Article</strong>: ${component.tipoArticulo} -
+                    <strong>Model</strong>: ${component.modelo} -
+                    <strong>Type Component</strong>: ${component.tipoComponente} -
+                    <strong>Price</strong>: ${component.precio} - 
+                    <strong>Year</strong>: ${component.anoFabrica} -
+                    <strong>Name fabricante</strong>: ${component.nomFabricante} -
+                    <strong> ID </strong>: ${component.IDcs || component.IDce} -
+                    <strong>Product</strong>: ${component.nombre} -
+                    <strong>Type Connect</strong>: ${component.tipoConector} -
+                    <strong>Puerto Validos</strong>: ${component.puertosValidos} 
                 </div>
+                <a href="#" class="btn btn-danger" name="delete">Delete</a>
             </div>
         `;
     productList.appendChild(element);

@@ -38,6 +38,9 @@ class Computer {
     this.pantallaTactil = pantallaTactil;
     return this;
   }
+  bake(){
+    console.log(this);
+  }
 }
 
 module.exports = Computer;
